@@ -1,3 +1,4 @@
 <?php
 
-echo $_SERVER['HTTP_CONNECTION'];
+require_once __DIR__.'/../vendor/autoload.php';
+

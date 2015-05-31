@@ -101,7 +101,7 @@ abstract class Container implements ArrayAccess, ContainerContract
      *
      * @param string $concrete
      *
-     * @return \Illuminate\Contracts\Container\ContextualBindingBuilder
+     * @return \Phenix\Contracts\Container\ContextualBindingBuilder
      */
     public function when($concrete)
     {
@@ -1006,7 +1006,7 @@ abstract class Container implements ArrayAccess, ContainerContract
     /**
      * Set the shared instance of the container.
      *
-     * @param \Illuminate\Contracts\Container\Container $container
+     * @param \Phenix\Contracts\Container\Container $container
      */
     public static function setInstance(ContainerContract $container)
     {
