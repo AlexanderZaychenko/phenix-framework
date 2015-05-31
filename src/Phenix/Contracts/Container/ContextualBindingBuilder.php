@@ -1,7 +1,23 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dengine
- * Date: 31.05.15
- * Time: 15:48
- */
+
+namespace Phenix\Contracts\Container;
+
+
+interface ContextualBindingBuilder {
+
+    /**
+     * Define the abstract target that depends on the context.
+     *
+     * @param  string  $abstract
+     * @return $this
+     */
+    public function needs($abstract);
+
+    /**
+     * Define the implementation for the contextual binding.
+     *
+     * @param  \Closure|string  $implementation
+     * @return void
+     */
+    public function give($implementation);
+}
